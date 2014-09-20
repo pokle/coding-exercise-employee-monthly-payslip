@@ -1,7 +1,12 @@
 (ns employee-monthly-payslip.core-test
-  (:require [clojure.test :refer :all]
+  (:require [midje.sweet :refer :all]
             [employee-monthly-payslip.core :refer :all]))
 
-(deftest a-test
-  (testing "FIXME, I fail."
-    (is (= 0 1))))
+(fact "Tax rates as specified by the ATO"
+
+      (tax -1)         => 0
+      (tax 0)          => 0
+      (tax 1820000)    => 0
+      (tax 1820100)    => 19
+      
+      )
