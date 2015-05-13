@@ -48,3 +48,6 @@ As part of your solution:
 - Provide instruction on how to run the application
 - Provide a test harness to validate your solution.
 
+
+----
+[My other coding exercises](https://github.com/search?q=user%3Apokle+coding-exercise)
